@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INST377 Lab 5 - Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Let's Convert some Currency!</h1>
+
+  <!--
+    TODO (Requirement 1 - The Form):
+    Build ONE form that contains:
+      - A label + dropdown (<select>) for the FROM currency
+      - A label + dropdown (<select>) for the TO currency
+        (Leave the dropdowns EMPTY - script.js will fill them on page load)
+      - A label + input for the amount
+        * It must accept numbers, including decimals like 11.10
+        * It must be required
+      - A Submit button
+
+    Give your elements ids so you can find them from script.js.
+  -->
+
+<form id="currency-form">
+
+  <label for="from-currency">From Currency:</label>
+  <select id="from-currency"></select>
+
+  <label for="to-currency">To Currency:</label>
+  <select id="to-currency"></select>
+
+  <label for="amount">Amount:</label>
+  <input type="number" id="amount" step="any" required>
+
+  <button type="submit">Convert</button>
+
+</form>
+
+
+
+  <!--
+    TODO (Requirement 2b - Display the Result):
+    Add an empty element where the conversion result will appear,
+    e.g. "12 AUD is equal to 120156 IDR".
+    It should show nothing until the user submits.
+  -->
+
+<p id="result"></p>
+
+  <!-- Your JavaScript lives in a separate file -->
+  <script src="script.js"></script>
+</body>
+</html>
